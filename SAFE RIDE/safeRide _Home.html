@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeRide Kano State</title>
+  <link rel="stylesheet" href="/SAFE RIDE/SafeRide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <header>
+  <nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+  <i class="fas fa-bars"></i>
+</label>
+    <label Class="logo">
+      <img src="/SAFE RIDE\image/2024102410471384.png" height="100%" box-shadow="rgba(0, 0, 0, 0.70) 0px 3px 8px"> <span>SafeRide</span>Nigeria</label>
+    
+    <ul>
+      
+      <li><a class="active" href="http://localhost:7700/SAFE%20RIDE/safeRide%20_Home.html">Home</a></li>
+      <li><a href="http://localhost:7700/SAFE%20RIDE/services.html">Services</a></li>
+      <li><a href="http://localhost:7700/SAFE%20RIDE/about.html">About</a></li>
+      <li><a href="http://localhost:7700/SAFE%20RIDE/bookings.html">Bookings</a></li>
+      <li><a href="http://localhost:7700/SAFE%20RIDE/contact.html">CONTACT Us</a></li>
+    </ul>
+   
+  </nav>
+  </header>
+  <div class="container">
+  <div class="form-box">
+    <div class="neaver">
+     
+</div>
+       <div class="dropdown">
+       
+         <button class="dropdown-btn">Profile</button>
+         <div class="dropdown-content">
+     <main>
+            <section class="profile-section">
+                <div class="profile-picture">
+                    <img src="/SAFE RIDE/image/PSX_kamal.jpg" alt="Profile Picture" >
+                </div>
+                <div class="profile-info">
+                    <h1>Kamaluddeen Aliyu Ahmad</h1>
+                    <p>Username: Kamaluddeen@017</p>
+                    <p>Email: kamaluddeenaliyuahmad017@gmail.com</p>
+                    <p>Phone: +234 9060087765</p>
+                </div>
+                <button class="edit-button" <a href="http://localhost:7700/SAFE%20RIDE/index.html">Sign Out</button></a>
+                <br>
+                <br>
+            <div class="account-section">
+                <h1>Account Settings</h1>
+                <form>
+                    <div class="form-group">
+                        <p>Language:</p>
+                        <select id="language" name="language">
+                            <option value="english">English</option>
+                            <option value="spanish">Arabic</option>
+                        <option value="french">French</option>     
+                            <option value="french">hausa</option>
+                 
+                        <option value="english">yuroba</option>
+                        <option value="spanish">Ibra</option>
+                       
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Timezone:</p>
+                        <select id="timezone" name="timezone">
+                          <option value="utc-5">GMT+1</option>
+                            <option value="utc-5">UTC-5</option>
+                            <option value="utc-4">UTC-4</option>
+                            <option value="utc-3">UTC-3</option>
+                        </select>
+                    </div>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </section>
+        </main>
+         </div>
+       </div>
+   <h1>We Make <br>Your Travel <br>Safe</h1>
+   <p>welcome!, it's a pleasure to have you back,<br>start your booking now And enjoy a Safe Trip at Affordable price with much discounts </p>
+   
+     <form>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001251.9777969096!2d7.198804739733574!3d11.573689462747373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ac492941faebb7%3A0xb77211b27ef50cdb!2sKano!5e0!3m2!1sen!2sng!4v1729424751564!5m2!1sen!2sng" width="640" height="750"  id="map" cols="30" rows="10"style="border:6;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Locate The Pick Up & Distination Address</iframe>
+
+       
+       <div class="input-group">
+         <div class="input-field" id="namefield">
+           <i class="fa-solid fa-location-dot"></i>
+           <label>Pick Up</label><br>
+           <input type="text" placeholder="enter pick address" required>
+         </div>
+       </div>
+       <div class="input-group">
+         <div class="input-field">
+           <i class="fa-solid fa-location-dot"></i>
+           <label>Distination</label><br>
+           <input type="text" placeholder="droping address" required>
+         </div>
+     
+       </div>
+       <div class="input-group">
+         <div class="input-field">
+          <i class="fa-regular fa-calendar"></i>
+        <label>On</label><br>
+           <input type="date" required>
+           </div>
+       </div>
+       <div class="input-group">
+         <div class="input-field">
+           <i class="fa-regular fa-clock"></i>
+           <label>At</label> <br>
+           <input type="time" required><br>
+           <i class="fa-solid fa-users"></i>
+      <label>Passenger</label><br>
+          <input type="Number" placeholder="No. of passenger Here eg 2 or 4"> <br>
+          <i class="fa-solid fa-person-walking-luggage"></i>
+          <label>Bags</label><br>
+          <input type="Number" placeholder="No. of bags Here">
+          <h2>Random Booking</h2>
+<div class="choice-options">
+<div class="choice-option" id="option1" onclick="selectOption(this)">VIP Ride</div>
+<div class="choice-option" id="option2" onclick="selectOption(this)">Taxi Ride</div> <br>
+<div class="choice-option" id="option3" onclick="selectOption(this)">Napep Ride</div>
+<div class="choice-option" id="option3" onclick="selectOption(this)">Emergency</div>
+</div>
+           <div class="button">
+             <button type="submit2" class="bttn"<a href="http://localhost:7700/SAFE%20RIDE/payment%20_2.html">Book Now</a></a></button>
+         </div>
+  
+        
+         </div>
+
+       </div>
+       </div>
+       </div>
+       </div>
+  
+       </div>
+  
+     </form>
+
+ <section>
+   <h2></h2>
+
+      
+
+      </div>
+     </div>
+    </form>
+    <div class="taxi-type-select">
+      <h2> Choose your Vehicle</h2>
+      <div class="taxi-type-options">
+        <div class="taxi-type-option">
+          <img src="/SAFE RIDE/image/BVW I14 luxury car.webp" alt="/SAFE RIDE/BVW I14 luxury car.webp">
+          <h3>Luxury VIP Ride</h3>
+          <p3>Capacity: <br> 4-8 passengers</p3>
+          <p>Price: From ₦20k</p>
+          <button class="select-btn"<a href="http://localhost:7700/SAFE%20RIDE/gallery.html">Book now</a></button>
+        </div>
+        <div class="taxi-type-option">
+          <img src="/SAFE RIDE/image/istockphoto-492362277-1024x1024.jpg" alt="/SAFE RIDE/istockphoto-492362277-1024x1024.jpg">
+          <h3>Taxi Ride</h3>
+          <p6>Capacity: <br>6 passengers</p6>
+          <p>Price: From ₦500</p>
+          <button class="select-btn"<a href="http://localhost:7700/SAFE%20RIDE/Taxi_Gallary.html">Book now</a></button>
+        </div>
+        <div class="taxi-type-option">
+          <img src="/SAFE RIDE/image/Specs and price of TVS tricycles in Nigeria 2024 (Keke Napep) ⋆ Sellatease Blog.jpeg" alt="/SAFE RIDE/Specs and price of TVS tricycles in Nigeria 2024 (Keke Napep) ⋆ Sellatease Blog.jpeg">
+          <h3>Napep Ride</h3>
+          <p6>Capacity: <br> 3 passengers</p6>
+          <p>Price: From ₦200</p>
+          <button class="select-btn"<a href="http://localhost:7700/SAFE%20RIDE/Napep_gallary.html">Book now</a></button>
+        </div>
+        <div class="taxi-type-option">
+          <img src="/SAFE RIDE/image/SR_Ambulance.jpg" alt="/SAFE RIDE/image/SR_Ambulance.jpg">
+          <h3>Emargency Ride</h3>
+          <p6>Capacity: <br> 3 passengers</p6>
+          <p>Price: From ₦500</p>
+          <button class="select-btn">Book now</button>
+        </div>
+      </div>
+    </div>
+    
+       <br>
+    <div class="box">
+    <h3>
+    HOW DOES IT WORK
+  </h3> 
+  <br>
+  <div class="item">
+   <img srcset="/SAFE RIDE/image/2024110108342153.png" src="/SAFE RIDE/image/2024110108342153.png" alt="/SAFE RIDE/2024110108342153.png">
+   <p>Enter your pickup point and <br> time,select your vehicle.</p>
+      <img src="/SAFE RIDE/image/2024110108340258.png" alt="/SAFE RIDE/2024110108340258.png">
+  <p>Verify the booking details and <br> select your preferred payment <br> method.</p>
+    <img src="/SAFE RIDE/image/2024110108333991.png" alt="/SAFE RIDE/2024110108333991.png">
+    <p>Our SafeRide driver picks you up <br> at the given location and time.</p>
+        <a href="http://localhost:7700/SAFE%20RIDE/about.html">read more</a>
+      </div>
+
+    </div>
+</div>
+  </div>
+   <div class="support-section">   
+   <p>Frequently Asked Questions</p>
+  <ul>
+    <li>Q: How do I book a taxi?</li>
+    <li>A: Click on "Book Now" and follow the prompts.</li>
+    <li>Q: Can I cancel my booking?</li>
+    <li>A: Yes, but cancellation fees may apply.</li>
+  </ul>
+</div>
+  <div class="p_logo">
+     <img srcset="/SAFE RIDE/image/play_logo.png" src="/SAFE RIDE/image/play_logo.png" alt="/SAFE RIDE/play_logo.png" >  <br>
+     <a href="#"><span2>click here to</span2> install the app now </a>
+   </div>
+</form2>
+ </section>
+ </body>
+ 
+ <script>
+// Get elements
+const checkbtn = document.getElementById('check');
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
+const formBox = document.querySelector('.form-box');
+const inputFields = document.querySelectorAll('.input-field');
+const bookNowBtn = document.querySelector('.bttn');
+const nav = document.querySelector('nav');
+const logo = document.querySelector('.logo');
+const pickUpInput = document.querySelector('input[placeholder="enter pick address"]');
+const destinationInput = document.querySelector('input[placeholder="droping address"]');
+const dateInput = document.querySelector('input[type="date"]');
+const timeInput = document.querySelector('input[type="time"]');
+const passengerInput = document.querySelector('input[placeholder="No. of passenger Here eg 2 or 4"]');
+const bagsInput = document.querySelector('input[placeholder="No. of bags Here"]');
+const stars = document.querySelectorAll('.star');
+
+stars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    // Remove active class from all stars
+    stars.forEach((s) => s.classList.remove('active'));
+
+    // Add active class to clicked star and previous stars
+    for (let i = 0; i <= index; i++) {
+      stars[i].classList.add('active');
+    }
+
+    // Update rating value
+    const ratingValue = document.querySelector('.rating-value');
+    ratingValue.textContent = `${index + 1}/5`;
+  });
+});
+
+// Add event listeners
+checkbtn.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+
+dropdownBtn.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+});
+
+window.addEventListener('click', (e) => {
+  if (!e.target.matches('.dropdown-btn')) {
+    dropdownContent.classList.remove('show');
+  }
+});
+
+inputFields.forEach((field) => {
+  field.addEventListener('focus', () => {
+    field.parentNode.classList.add('focus');
+  });
+
+  field.addEventListener('blur', () => {
+    field.parentNode.classList.remove('focus');
+  });
+});
+// Add scroll event listener to nav
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    nav.classList.add('scroll');
+  } else {
+    nav.classList.remove('scroll');
+  }
+});
+
+// Add click event listener to logo
+logo.addEventListener('click', () => {
+  window.location.href = '/';
+});
+
+// Add event listener to pick-up input
+pickUpInput.addEventListener('input', () => {
+  if (pickUpInput.value.length > 0) {
+    pickUpInput.parentNode.classList.add('filled');
+  } else {
+    pickUpInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add event listener to destination input
+destinationInput.addEventListener('input', () => {
+  if (destinationInput.value.length > 0) {
+    destinationInput.parentNode.classList.add('filled');
+  } else {
+    destinationInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add event listener to date input
+dateInput.addEventListener('input', () => {
+  if (dateInput.value.length > 0) {
+    dateInput.parentNode.classList.add('filled');
+  } else {
+    dateInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add event listener to time input
+timeInput.addEventListener('input', () => {
+  if (timeInput.value.length > 0) {
+    timeInput.parentNode.classList.add('filled');
+  } else {
+    timeInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add event listener to passenger input
+passengerInput.addEventListener('input', () => {
+  if (passengerInput.value.length > 0) {
+    passengerInput.parentNode.classList.add('filled');
+  } else {
+    passengerInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add event listener to bags input
+bagsInput.addEventListener('input', () => {
+  if (bagsInput.value.length > 0) {
+    bagsInput.parentNode.classList.add('filled');
+  } else {
+    bagsInput.parentNode.classList.remove('filled');
+  }
+});
+
+// Add animation to form fields on focus
+inputFields.forEach((field) => {
+  field.addEventListener('focus', () => {
+    field.parentNode.classList.add('animate');
+    setTimeout(() => {
+      field.parentNode.classList.remove('animate');
+    }, 200);
+  });
+});
+
+// Add ripple effect to buttons
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+    button.appendChild(ripple);
+    setTimeout(() => {
+      ripple.remove();
+    }, 500);
+  });
+});
+// JavaScript function to select option
+		function selectOption(option) {
+			// Remove selected class from all options
+			document.querySelectorAll('.choice-option').forEach((opt) => {
+				opt.classList.remove('selected');
+			});
+			
+			// Add selected class to chosen option
+			option.classList.add('selected');
+		}
+
+ </script>
+  
+  <!-- Footer Section -->
+    <footer>
+      <div class="support-section">
+
+  <p>Contact Us:</p>
+  <ul class="fot">
+    <li>Phone: +234 906 008 7765</li>
+    <li>Email:= [kamaluddeenaliyuahmad017@gmail.com]<br>whatsapp:
+    <a href="https://wa.me/qr/CSBBYXTT7W2OG1">message</a></li>
+  </ul>
+  
+</div>
+        <p>&copy; 2025 SafeRide Website</p>
+    </footer>
+</html>
