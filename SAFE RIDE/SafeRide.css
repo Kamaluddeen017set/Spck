@@ -8,6 +8,8 @@
   text-transform: capitalize
 }
 
+@import"{{site.theme}}";
+
 body{
   background-color:#f9f9f9;
   background-repeat: no-repeat;
