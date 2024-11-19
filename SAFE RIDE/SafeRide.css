@@ -587,13 +587,9 @@ input[type=checkbox]{
   }}
   nav ul li a{
     display: block;
-    border: 3px solid whit;
+    border: 3px solid white;
     font-size: 16px;
   }
-@media (max-width: 858){
-  .checkbtn{
-    display: block;
-  }}
 
 ul{
   position: fixed;
